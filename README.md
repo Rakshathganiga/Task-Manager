@@ -25,7 +25,7 @@ python manage.py startapp tasks
 
 # Run server
 python manage.py runserver
-
+```
 ---
 
 # Task Management REST API - Endpoints & Examples
@@ -47,6 +47,7 @@ python manage.py runserver
   "description": "Build task management API",
   "status": "pending"
 }
+```
 
 ## 2. List All Tasks
 - **Method:** GET  
@@ -78,6 +79,7 @@ python manage.py runserver
 {
   "status": "pending"
 }
+```
 
 ## 5. Delete Task
 - **Method:** DELETE  
