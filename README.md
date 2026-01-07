@@ -1,7 +1,7 @@
 # Task Management REST API (Django)
 
 A REST API for managing tasks built using **Python, Django, and Django REST Framework**.  
-This project uses **in-memory storage only** (no database), as required.
+This project uses **in-memory storage only** (no database).
 
 ---
 
@@ -28,11 +28,11 @@ python manage.py runserver
 ```
 ---
 
-# Task Management REST API - Endpoints & Examples
+## Task Management REST API - Endpoints & Examples
 
 ---
 
-## 1. Create Task
+# 1. Create Task
 - **Method:** POST  
 - **URL:** `/tasks`  
 - **Description:** Create a new task with a title, optional description, and status.
@@ -49,7 +49,7 @@ python manage.py runserver
 }
 ```
 
-## 2. List All Tasks
+# 2. List All Tasks
 - **Method:** GET  
 - **URL:** `/tasks`  
 - **Description:** Retrieve all tasks. Optional filter by status (pending, in_progress, completed).
@@ -58,7 +58,7 @@ python manage.py runserver
 - Method: GET  
 - URL: `http://127.0.0.1:8000/tasks?status=pending`
 
-## 3. Get Task by ID
+# 3. Get Task by ID
 - **Method:** GET  
 - **URL:** `/tasks`  
 - **Description:** Retrieve a single task by its unique ID.
@@ -67,7 +67,7 @@ python manage.py runserver
 - Method: GET  
 - URL: `http://127.0.0.1:8000/tasks/<task_id>`
 
-## 4. Update Task
+# 4. Update Task
 - **Method:** PUT  
 - **URL:** `/tasks`  
 - **Description:** Update title, description, or status of a task.
@@ -81,7 +81,7 @@ python manage.py runserver
 }
 ```
 
-## 5. Delete Task
+# 5. Delete Task
 - **Method:** DELETE  
 - **URL:** `/tasks`  
 - **Description:** Delete a task by its ID.
@@ -92,9 +92,9 @@ python manage.py runserver
 
 ---
 
-# Task Management REST API - Assumptions & Time Spent
+## Task Management REST API - Assumptions & Time Spent
 
-## Assumptions & Design Decisions
+# Assumptions & Design Decisions
 - In-memory dictionary is used as storage (no database).  
 - UUIDs are used for unique task IDs.  
 - UTC timestamps are used for `created_at` and `updated_at`.  
@@ -107,7 +107,7 @@ python manage.py runserver
 
 ---
 
-## Time Spent
+# Time Spent
 Approximately **3 hours** in total:  
 - API design and implementation  
 - Validation and error handling  
